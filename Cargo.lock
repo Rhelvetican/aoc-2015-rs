@@ -26,8 +26,10 @@ version = "1.0.0"
 dependencies = [
  "hashbrown",
  "itertools",
+ "quote",
  "rayon",
  "serde_json",
+ "syn",
  "time",
 ]
 
