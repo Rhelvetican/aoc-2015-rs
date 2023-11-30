@@ -1,9 +1,9 @@
 [package]
-name = "aoc_2015_rs"
+name = "AOC-2015-RS"
 version = "1.0.0"
 edition = "2021"
 authors = ["rhelv"]
-# default-run = "aoc"
+default-run = "AOC-2015-RS"
 
 [lib]
 proc-macro = true
@@ -12,10 +12,11 @@ proc-macro = true
 overflow-checks = false
 
 [dependencies]
-itertools = "0.12.0"
-hashbrown = "0.14.3"
-serde_json = "1.0.108"
-rayon = "1.8.0"
-time = "0.3.30"
-quote = { version = "1.0.33", features = [] }
-syn = "2.0.39"
+itertools = "0.10.5"
+hashbrown = "0.13.2"
+serde_json = "1.0"
+rayon = "1.6"
+
+# lib proc-macro dependencies
+syn = { version = "1.0.109", features = ["full"] }
+quote = "1.0"
